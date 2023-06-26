@@ -8,7 +8,7 @@ image:
   repository: 384005890259.dkr.ecr.eu-central-1.amazonaws.com/counter-service
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "123"
+  tag: "124"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
