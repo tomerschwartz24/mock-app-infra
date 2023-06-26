@@ -17,6 +17,7 @@ pipeline {
                     yq eval   '.image.tag = "${env.BUILD_NUMBER}"' -i counter-app-helm/values.yaml
                     git add counter-app-helm/values.yaml
                     git commit counter-app-helm/values.yaml -m " Updated counter-app Helm chart image tag to \${BUILD_NUMBER} "
+                    git pull 
                     git push --set-upstream origin main
                        """
                 }
