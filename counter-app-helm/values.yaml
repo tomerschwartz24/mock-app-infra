@@ -44,6 +44,7 @@ service:
   sessionAffinity: None
   matchLabels:
     app: counter-service
+  namespace: counter-app
 ingress:
   enabled: false
   className: ""
